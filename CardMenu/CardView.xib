@@ -10,17 +10,41 @@
             <rect key="frame" x="0.0" y="0.0" width="260" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label X" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6y-3W-QQz">
-                    <rect key="frame" x="8" y="14" width="160" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label X" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6y-3W-QQz">
+                    <rect key="frame" x="81" y="44" width="140" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="cJ1-tv-jzT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T59-zb-nXz">
-                    <rect key="frame" x="222" y="10" width="30" height="30"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T59-zb-nXz">
+                    <rect key="frame" x="23" y="30" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="BJD-Ny-msy"/>
+                        <constraint firstAttribute="height" constant="50" id="Don-wL-F8U"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2e-Li-t0h">
+                    <rect key="frame" x="81" y="78" width="140" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="T59-zb-nXz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="5iY-nc-8qq"/>
+                <constraint firstItem="q6y-3W-QQz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="44" id="N9r-LL-Dg1"/>
+                <constraint firstItem="T59-zb-nXz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="O2o-5V-FbR"/>
+                <constraint firstAttribute="trailing" secondItem="q6y-3W-QQz" secondAttribute="trailing" constant="13" id="SdL-J2-pvi"/>
+                <constraint firstItem="q6y-3W-QQz" firstAttribute="leading" secondItem="T59-zb-nXz" secondAttribute="trailing" constant="8" symbolic="YES" id="fdj-5B-fNd"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

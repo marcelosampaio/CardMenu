@@ -13,4 +13,8 @@
 // class Method
 +(UIColor *)randomColor;
 
++(UIColor *)cardDarkColor;
++(UIColor *)cardMediumColor;
++(UIColor *)cardLightColor;
+
 @end

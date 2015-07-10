@@ -34,6 +34,14 @@
                                  alpha:1.0f];
 }
 
-
++(UIColor *)cardDarkColor{
+    return [UIColor colorWithRed:0.4 green:0.1 blue:0.6 alpha:1];
+}
++(UIColor *)cardMediumColor{
+    return [UIColor colorWithRed:0.5 green:0.2 blue:0.7 alpha:1];
+}
++(UIColor *)cardLightColor{
+    return [UIColor colorWithRed:0.6 green:0.3 blue:0.8 alpha:1];
+}
 
 @end
